@@ -1,0 +1,9 @@
+SELECT
+mavenmarket_products.product_name,
+ROUND(SUM(mavenmarket_transactions_1998.quantity*mavenmarket_products.product_cost),2)AS revenue
+FROM mavenmarket_trasactions_1998
+JOIN mavenmarket_products
+ON mavenmarket_transactions_1998.product_id=mavenmarket_products.product_id
+GROUP BY mavenmarket_products.product_name
+ORDER BY revenue DSEC LIMIT 3;
+
