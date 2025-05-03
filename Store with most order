@@ -1,0 +1,5 @@
+Select mavenmarket_transactions_1998.store_id,
+Count(mavenmarket_products.product_id)
+From mavenmarket_transaction_1998 Join mavenmarket_products on mavenmarket_products.product_id=mavenmaraket_transaction_1998.product_id
+Group by mavenmarket_transaction_1998.store_id order by store_id desc limit 10
+
