@@ -4,5 +4,5 @@ FROM mavenmarket_transaction_1998
 JOIN mavenmarket_products 
 ON mavenmarket_products.product_id=mavenmaraket_transaction_1998.product_id
 GROUP BY mavenmarket_transaction_1998.store_id 
-ORDER BY store_id desc lIMIT 10
+ORDER BY store_id DSEC lIMIT 10
 
