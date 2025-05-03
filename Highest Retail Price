@@ -1,0 +1,2 @@
+Select Distinct product_retail_price From mavenmarket_products
+Order by product_retail_price Desc limit 3 
