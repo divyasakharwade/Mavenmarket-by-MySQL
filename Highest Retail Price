@@ -1,2 +1,3 @@
-Select Distinct product_retail_price From mavenmarket_products
-Order by product_retail_price Desc limit 3 
+SELECT DISTINCT product_retail_price 
+FROM mavenmarket_products
+ORDER BY product_retail_price DSEC lIMIT 3 
