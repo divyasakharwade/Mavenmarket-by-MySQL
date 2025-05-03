@@ -1,0 +1,6 @@
+SELECT 
+ROUND (SUM (mavenmarket_products.product_cost* mavenmarket_transcations_1998.qunatity))
+AS Total_revenue
+FROM mavenmarket_products 
+JOIN mavenmarket_transaction_1998
+ON mavenmarket_product_id=mavenmarket_transcations_1998.product_id;
