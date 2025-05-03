@@ -1,0 +1,7 @@
+SELECT mavenmarket_produts.product_name,
+SUM (mavenmarket_transactions_1998.quantity) AS Total_Quantity
+FROM mavenmarket_products 
+JOIN mavenmarket_transaction_1998
+ON mavenmarket_products.product_id=mavenmarket_transactions_1998.product_id
+GROUP BY mavenmarket_products.product_name 
+ORDER BY Total_Quantity DSEC LIMIT 5;
